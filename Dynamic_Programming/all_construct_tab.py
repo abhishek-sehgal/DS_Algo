@@ -4,8 +4,8 @@ def all_construct(target, word_bank):
     for i in range(len(target) + 1):
         for word in word_bank:
             if target[i : i + len(word)] == word:
-                new_combination = list(map(lambda x: [*x, word], table[i]))                
-                table[i+len(word)].extend([*new_combination])
+                new_combination = list(map(lambda x: [*x, word], table[i]))
+                table[i + len(word)].extend([*new_combination])
     return table[len(target)]
 
 

@@ -23,4 +23,6 @@ def all_construct(target, word_bank, memo=None):
 print(all_construct("purple", ["purp", "p", "ur", "le", "purpl"]))
 print(all_construct("abcdef", ["ab", "abc", "cd", "def", "abcd", "ef", "c"]))
 print(all_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
-print(all_construct("aaaaaaaaaaaaaaaaaaaaaaaaaaz", ["a", "aa", "aaa", "aaaa", "aaaaa"])) # If we remove the z, it becomes the worst case scenario
+print(
+    all_construct("aaaaaaaaaaaaaaaaaaaaaaaaaaz", ["a", "aa", "aaa", "aaaa", "aaaaa"])
+)  # If we remove the z, it becomes the worst case scenario
